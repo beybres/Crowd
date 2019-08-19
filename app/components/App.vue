@@ -1,11 +1,19 @@
 <template>
     <Page>
-        <ActionBar title="CROWD"/>
-        <GridLayout columns="*" rows="*">
-            <Label class="message" :text="msg" col="0" row="0"/>
-        </GridLayout>
-
-        <Button id="mainbutton" text="Color" class="btn btn-primary btn-rounded-sm"/>
+    <ActionBar title="CROWD"/>
+      <Stacklayout>
+        <TabView height="300px">
+          <TabViewItem title="Favourites">
+            <Label text="En sida med favourites" />
+          </TabViewItem>
+        <TabViewItem title="Search">
+          <Label text="En söksida" />
+        </TabViewItem>
+          <TabViewItem title="Settings">
+            <Label text="En sida med inställningar" />
+          </TabViewItem>
+          </TabView>
+      </Stacklayout>
     </Page>
 </template>
 
@@ -14,8 +22,8 @@
     data() {
       return {
         msg: 'Hello World!'
-      };
-    },
+      }
+    }
   }
 </script>
 
