@@ -59,7 +59,7 @@
   export default {
     data() {
       return {
-        myKey: "ea9385095138c0c18e3aca7590507b54",
+        myKey: "990ca60927c8b72405466d000bbe1d30",
         movies: [],
         msg: 'Hello World 2!'
       }
@@ -78,7 +78,7 @@
           utils.openUrl('https://www.themoviedb.org/movie/'+id);
       },
       getScoreClass(score) {
-          return score > 8 ? 'green' : 'red';
+          return score > 7 ? 'green' : 'red';
       }
     },
     mounted() {
